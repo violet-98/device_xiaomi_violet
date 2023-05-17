@@ -229,6 +229,16 @@ renderthread.skia.reduceopstasksplitting=true
 # System
 persist.sys.binary_xml=false
 
+# Touch Hax
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+
 # USB
 vendor.usb.use_ffs_mtp=0
 
