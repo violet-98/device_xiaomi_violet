@@ -8,5 +8,7 @@ git clone --depth=1 https://gitlab.com/CuriousNom/chaste_vendor-xiaomi-firmware-
 # Cloning the miuicamera repository
 git clone --depth=1 https://gitlab.com/crdroidandroid/android_vendor_miuicamera -b 14.0-violet vendor/MiuiCamera
 
-# Cloning prebuilt Clang repository
-git clone --depth=1 https://gitlab.com/kei-space/clang/r522817.git prebuilts/clang/host/linux-x86/clang-r522817
+# Setup Neutron Clang
+mkdir prebuilts/clang/host/linux-x86/clang-neutron; cd prebuilts/clang/host/linux-x86/clang-neutron;
+curl -LO "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman";
+chmod +x antman; ./antman -S=05012024; ./antman --patch=glibc; cd ../../../../../;sed -i '/CLANG_EXTRA_FLAGS += --hip-path=\/dev\/null/d' vendor/lineage/build/tasks/kernel.mk;
