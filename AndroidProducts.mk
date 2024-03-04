@@ -6,8 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_violet.mk
+    $(LOCAL_DIR)/blaze_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_violet-userdebug \
-    aosp_violet-user
+    blaze_violet-userdebug \
+    blaze_violet-user \
+    blaze_violet-eng
