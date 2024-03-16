@@ -486,6 +486,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     vendor.display.config@2.0 \
     libdisplayconfig.vendor \
+    android.media.audio.common.types-V2-cpp \
     libnl \
     libqdMetaData \
     libqdMetaData.system \
