@@ -6,7 +6,7 @@ git clone --depth=1 https://github.com/kibria5/kernel_xiaomi_violet.git kernel/x
 git clone --depth=1 https://gitlab.com/CuriousNom/chaste_vendor-xiaomi-firmware-violet.git -b 14.0 vendor/xiaomi-firmware/violet
 
 # Cloning the miuicamera repository
-git clone --depth=1 https://gitlab.com/crdroidandroid/android_vendor_miuicamera -b 14.0-violet vendor/MiuiCamera
+git clone --depth=1 https://gitlab.com/Joker-V2/android_vendor_MiuiCamera.git vendor/MiuiCamera
 
 # Setup Neutron Clang
 mkdir prebuilts/clang/host/linux-x86/clang-neutron; cd prebuilts/clang/host/linux-x86/clang-neutron;
