@@ -11,6 +11,9 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Blaze stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_PICO_GAPPS := true
