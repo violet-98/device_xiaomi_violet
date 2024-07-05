@@ -6,7 +6,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
@@ -231,7 +231,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
-    libavservices_minijail.vendor \
     libbatching \
     libgeofencing \
     libgnss
@@ -328,6 +327,13 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw \
     libstagefright_softomx_plugin.vendor
+
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    libstagefright_omx.vendor \
+    libavservices_minijail \
+    libavservices_minijail.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
