@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 
 # Build Signer
-$(call inherit-product-if-exists, vendor/extra/product.mk)
+-include vendor/lineage-priv/keys/keys.mk
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
