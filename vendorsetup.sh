@@ -11,6 +11,9 @@ git clone --depth=1 https://gitlab.com/Joker-V2/android_vendor_MiuiCamera.git ve
 # Build Signer
 git clone --depth=1 https://github.com/CuriousNom/cr_keys vendor/lineage-priv
 
+# BCR
+git clone --depth=1 https://github.com/CuriousNom/vendor_bcr.git vendor/bcr
+
 # Setup Neutron Clang
 mkdir prebuilts/clang/host/linux-x86/clang-neutron; cd prebuilts/clang/host/linux-x86/clang-neutron;
 curl -LO "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman";
