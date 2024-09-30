@@ -16,13 +16,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # BCR
-$(call inherit-product, vendor/bcr/bcr.mk)
+# $(call inherit-product, vendor/bcr/bcr.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 
 # Build Signer
--include vendor/lineage-priv/keys/keys.mk
+# include vendor/lineage-priv/keys/keys.mk
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
