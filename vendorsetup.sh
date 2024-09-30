@@ -4,17 +4,3 @@ git clone --depth=1 https://github.com/kibria5/kernel_xiaomi_violet.git kernel/x
 
 # Cloning latest china firmware repository
 git clone --depth=1 https://gitlab.com/CuriousNom/chaste_vendor-xiaomi-firmware-violet.git -b 14.0 vendor/xiaomi-firmware/violet
-
-# Cloning the miuicamera repository
-git clone --depth=1 https://gitlab.com/Joker-V2/android_vendor_MiuiCamera.git vendor/MiuiCamera
-
-# Build Signer
-git clone --depth=1 https://github.com/CuriousNom/cr_keys vendor/lineage-priv
-
-# BCR
-git clone --depth=1 https://github.com/CuriousNom/vendor_bcr.git vendor/bcr
-
-# Setup Neutron Clang
-mkdir prebuilts/clang/host/linux-x86/clang-neutron; cd prebuilts/clang/host/linux-x86/clang-neutron;
-curl -LO "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman";
-chmod +x antman; ./antman -S=05012024; ./antman --patch=glibc; cd ../../../../../;sed -i '/CLANG_EXTRA_FLAGS += --hip-path=\/dev\/null/d' vendor/aosp/build/tasks/kernel.mk;
