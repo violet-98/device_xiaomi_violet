@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_violet.mk
+    $(LOCAL_DIR)/lineage_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_violet-ap2a--userdebug \
-    aosp_violet-ap2a-user \
-    aosp_violet-ap2a-eng
+    lineage_violet-ap2a-userdebug \
+    lineage_violet-ap2a-user \
+    lineage_violet-ap2a-eng
